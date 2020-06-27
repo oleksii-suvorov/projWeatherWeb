@@ -79,8 +79,8 @@ export default class Weather {
           document.querySelector("#city").style.display = "block";
           let date = new Date();
           let currentHour = date.getHours();
-          let isDay = Date.now().toString().substring(0,10) < sunset && Date.now().toString().substring(0,10) < sunrise;
-          // currentHour > 4 && currentHour <= 20;
+          let isDay = currentHour > 5 && currentHour <= 20;
+          // Date.now().toString().substring(0,10) < sunset && Date.now().toString().substring(0,10) < sunrise;
           this.setPicture(desc, isDay);
         }
       });

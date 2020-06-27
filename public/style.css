@@ -2,14 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  font-family: 'Stardos Stencil', cursive;
+}
 
+.day {
   background: #de6161;
   background: -webkit-linear-gradient(to right, #2657eb, #de6161);
   background: linear-gradient(to right, #2657eb, #de6161);
-
-  color: white;
-  font-family: 'Stardos Stencil', cursive;
-
 }
 
 .night {

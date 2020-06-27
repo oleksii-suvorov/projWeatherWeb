@@ -7,6 +7,6 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.listen(process.env.PORT, process.env.IP, function () {
-  console.log("Your server has been started...")
+app.listen(3001, function () {
+  console.log(`Your server has been started on port ${process.env.PORT}`);
 });

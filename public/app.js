@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
   let currentHour = date.getHours();
   let cityTitle = document.querySelector('#city');
   let timesToPlay = 1;
-  let isDay = currentHour > 4 && currentHour <= 20;
+  let isDay = currentHour > 5 && currentHour <= 20;
 
   if(isDay) {
-    body.className = "";
+    body.className = "day";
   } else {
     body.className = "night";
   }
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
       headers.className = 'header';
       document.querySelector(".header h1").style.opacity = "1";
       cityTitle.className = '#city';
-      body.className = "";
+      body.className = "day";
       playSent();
     } else {
         if(timesToPlay === 0) {
