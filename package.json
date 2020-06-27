@@ -1,0 +1,18 @@
+{
+  "name": "projweatherweb",
+  "version": "1.0.0",
+  "description": "ther second project for start2imoact - Weather API page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "projWeatherWeb"
+  },
+  "author": "oleskiy.OS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
