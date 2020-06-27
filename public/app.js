@@ -1,5 +1,4 @@
   import Weather from './Weather.js';
-document.addEventListener("DOMContentLoaded", function() {
   let body = document.getElementsByTagName("body")[0];
   let headers = document.getElementsByClassName("header")[0];
   let date = new Date();
@@ -7,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let cityTitle = document.querySelector('#city');
   let timesToPlay = 1;
   let isDay = currentHour > 5 && currentHour <= 20;
-
+window.addEventListener("DOMContentLoaded", function() {
   if(isDay) {
     body.className = "day";
   } else {
