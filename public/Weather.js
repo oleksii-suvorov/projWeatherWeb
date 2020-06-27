@@ -18,7 +18,7 @@ export default class Weather {
   constructor(city = "Perugia", lat, lon, apiKey = '8654243a721ac45727b1a63b2e4082a7'){
     this.city = city.toLowerCase().trim();
     this.appid = apiKey;
-    this.prefUrl = "http://api.openweathermap.org/data/2.5/";
+    this.prefUrl = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/";
     this.url = `${this.prefUrl}weather?q=${this.city}&units=metric&appid=${this.appid}`;
     this.lat = lat;
     this.lon = lon;
